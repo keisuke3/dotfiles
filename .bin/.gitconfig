@@ -1,0 +1,7 @@
+[user]
+	name = keisuke3
+	email = ishii@gizumo-inc.jp
+[core]
+	excludesfile = ~/.gitignore_global
+[commit]
+	template = ~/.stCommitMsg

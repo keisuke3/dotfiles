@@ -1,0 +1,74 @@
+{
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "editor.formatOnPaste": false,
+  "emmet.variables": {
+    "lang": "ja"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "editor.dragAndDrop": false,
+  "editor.renderLineHighlight": "all",
+  "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
+  "editor.wordWrap": "on",
+  "explorer.confirmDelete": false,
+  "files.autoGuessEncoding": true,
+  "htmltagwrap.tag": "div",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.iconTheme": "material-icon-theme",
+  "terminal.integrated.copyOnSelection": true,
+  "togglequotes.chars": ["\"", "'", "`"],
+  "workbench.colorTheme": "One Dark Pro",
+  "turboConsoleLog.addSemicolonInTheEnd": true,
+  "turboConsoleLog.quote": "'",
+  "workbench.startupEditor": "newUntitledFile",
+  "npm.packageManager": "yarn",
+  "task.problemMatchers.neverPrompt": {
+    "shell": true
+  },
+  "task.quickOpen.history": 0,
+  "task.quickOpen.showAll": true,
+  "markdown-preview-enhanced.previewTheme": "github-dark.css",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "html.format.enable": false,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.stickyScroll.enabled": true,
+  "[css]": {
+    "editor.defaultFormatter": "aeschli.vscode-css-formatter"
+  },
+  "[php]": {
+    "editor.tabSize": 4
+  },
+  "git.openRepositoryInParentFolders": "always",
+  "explorer.compactFolders": false,
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": true,
+    "scminput": false
+  },
+  "window.commandCenter": false,
+  "terminal.external.osxExec": "wrap.app",
+  "stylelint.validate": ["css", "less", "postcss", "scss"],
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "workbench.tree.enableStickyScroll": true,
+  "jest.runMode": "on-demand",
+  "cursor.cpp.disabledLanguages": ["scminput"],
+  "github.copilot.editor.enableAutoCompletions": true,
+  "workbench.editor.editorActionsLocation": "titleBar",
+  "prettify-ts.maxDepth": 5,
+  "shortcuts.buttons": [
+    "file-binary , workbench.action.tasks.build , Run build task",
+    "beaker , workbench.action.tasks.test , Run test task",
+    "terminal , workbench.action.terminal.toggleTerminal , Toggle terminal panel",
+    "telescope , workbench.action.showCommands , Show command palette",
+    "bug, workbench.action.debug.start, Launch debug"
+  ]
+}
