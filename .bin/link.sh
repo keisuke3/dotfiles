@@ -1,11 +1,14 @@
 #!/bin/bash
 
-SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+DOTFILES_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 
-for dotfile in "${SCRIPT_DIR}"/.??* ; do
-  [[ "$dotfile" == "${SCRIPT_DIR}/.git" ]] && continue
-  [[ "$dotfile" == "${SCRIPT_DIR}/.github" ]] && continue
-  [[ "$dotfile" == "${SCRIPT_DIR}/.DS_Store" ]] && continue
+cd "${DOTFILES_DIR}/links" || exit 1
+echo "🔗 Create a link using GNU Stow..."
 
-  ln -fnsv "$dotfile" "$HOME"
+for pkg in *; do
+    if [ -d "$pkg" ]; then
+      stow -R -v -t ~ "$pkg"
+    fi
 done
+
+echo "✅ All links updated!"
