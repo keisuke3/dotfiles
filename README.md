@@ -2,13 +2,13 @@
 
 ## Installation
 
-1. Clone the repository:
+1. Run the following command in your terminal:
    ```bash
-   git clone https://github.com/keisuke3/dotfiles.git
+   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/keisuke3/dotfiles/main/init.sh)"
    ```
 2. Change to the dotfiles directory:
    ```bash
-   cd dotfiles
+	cd dotfiles
    ```
 3. Run the installation script:
    ```bash

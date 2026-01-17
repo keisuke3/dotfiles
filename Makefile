@@ -1,11 +1,5 @@
 # Do everything.
-all: init link defaults brew
-
-# Set initial preference.
-init:
-	@echo "\033[0;34mRun init.sh\033[0m"
-	@.bin/init.sh
-	@echo "\033[0;34mDone.\033[0m"
+all: link defaults brew
 
 # Link dotfiles.
 link:
