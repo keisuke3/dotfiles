@@ -1,5 +1,10 @@
 [user]
 	name = keisuke3
 	email = ishii@gizumo-inc.jp
+
+[includeIf "gitdir:~/Documents/client/cygames/"]
+  path = ~/.gitconfig_cygames
+
 [core]
 	excludesfile = ~/.gitignore_global
+	symlinks = true
