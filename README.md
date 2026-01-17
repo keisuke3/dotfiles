@@ -4,7 +4,7 @@
 
 1. Run the following command in your terminal:
    ```bash
-   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/keisuke3/dotfiles/main/init.sh)"
+   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/keisuke3/dotfiles/.bin/init.sh)"
    ```
 2. Change to the dotfiles directory:
    ```bash
