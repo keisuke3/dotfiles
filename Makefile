@@ -1,20 +1,26 @@
-# Do everything.
-all: link defaults brew
+.DEFAULT_GOAL := help
 
-# Link dotfiles.
-link:
-	@echo "\033[0;34mRun link.sh\033[0m"
-	@.bin/link.sh
+.PHONY: help all link defaults brew config-check
+
+help: ## ヘルプを表示
+	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-20s\033[0m %s\n", $$1, $$2}'
+
+all: link defaults brew ## 全てのセットアップ（リンク、システム設定、Brew）を実行
+
+link: ## links/ 配下のシンボリックリンクを作成
+	@echo "\033[0;34mRun links.sh\033[0m"
+	@bash .bin/links.sh
 	@echo "\033[0;32mDone.\033[0m"
 
-# Set macOS system preferences.
-defaults:
+defaults: ## macOSのシステム設定を反映
 	@echo "\033[0;34mRun defaults.sh\033[0m"
-	@.bin/defaults.sh
+	@bash .bin/defaults.sh
 	@echo "\033[0;32mDone.\033[0m"
 
-# Install macOS applications.
-brew:
+brew: ## Brewfileに基づいたインストールを実行
 	@echo "\033[0;34mRun brew.sh\033[0m"
-	@.bin/brew.sh
+	@bash .bin/brew.sh
 	@echo "\033[0;32mDone.\033[0m"
+
+config-check: ## configs/ の中身を確認
+	@ls -R configs/
