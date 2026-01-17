@@ -14,6 +14,7 @@ brew "tree"
 brew "volta"
 brew "watch"
 brew "oven-sh/bun/bun"
+brew "stow"
 
 cask "arc"
 cask "google-chrome"
