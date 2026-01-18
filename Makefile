@@ -9,7 +9,7 @@ all: link defaults brew ## 全てのセットアップ（リンク、システ�
 
 link: ## links/ 配下のシンボリックリンクを作成
 	@echo "\033[0;34mRun links.sh\033[0m"
-	@bash .bin/links.sh
+	@bash .bin/link.sh
 	@echo "\033[0;32mDone.\033[0m"
 
 defaults: ## macOSのシステム設定を反映
