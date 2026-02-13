@@ -14,8 +14,10 @@ brew "uv"
 brew "volta"
 brew "tfenv"
 
-#CLIツール
+# CLIツール
 brew "awscli"
+brew "sheldon"
+brew "eza"
 brew "jq"
 brew "tree"
 brew "watch"
