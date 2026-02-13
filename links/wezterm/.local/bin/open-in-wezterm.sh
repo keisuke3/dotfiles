@@ -3,9 +3,9 @@
 # Usage: open-in-wezterm.sh <directory>
 
 DIR="${1:-.}"
-WEZTERM="$(command -v wezterm)"
+WEZTERM="$(command -v wezterm 2>/dev/null || echo /opt/homebrew/bin/wezterm)"
 
-if [ -z "$WEZTERM" ]; then
+if [ ! -x "$WEZTERM" ]; then
   echo "wezterm not found" >&2
   exit 1
 fi
