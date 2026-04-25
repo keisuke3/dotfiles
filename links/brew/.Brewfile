@@ -28,7 +28,7 @@ brew "ncdu"
 
 # データベースクライアント
 brew "mysql-client"
-brew "mysql@5.7"
+brew "mysql@8.0"
 
 # GUIアプリケーション
 cask "arc"
