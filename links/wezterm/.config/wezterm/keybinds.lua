@@ -157,6 +157,7 @@ return {
     { key = 'DownArrow', mods = 'SHIFT|ALT|CTRL', action = act.AdjustPaneSize{ 'Down', 1 } },
     { key = 'Copy', mods = 'NONE', action = act.CopyTo 'Clipboard' },
     { key = 'Paste', mods = 'NONE', action = act.PasteFrom 'Clipboard' },
+    { key = 'Return', mods = 'SHIFT', action = wezterm.action.SendString('\x1b[13;2u') },
   },
 
   key_tables = {

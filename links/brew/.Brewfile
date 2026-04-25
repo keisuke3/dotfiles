@@ -11,7 +11,7 @@ brew "composer"
 brew "python@3.10"
 brew "oven-sh/bun/bun"
 brew "uv"
-brew "volta"
+brew "mise"
 brew "tfenv"
 
 # CLIツール
@@ -24,6 +24,7 @@ brew "watch"
 brew "mkcert"
 brew "grep"
 brew "stow"
+brew "ncdu"
 
 # データベースクライアント
 brew "mysql-client"

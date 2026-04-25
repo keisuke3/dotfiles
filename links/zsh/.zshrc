@@ -3,6 +3,9 @@ export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
 # sheldon (plugin manager)
 eval "$(sheldon source)"
 
+# mise (version manager)
+eval "$(mise activate zsh)"
+
 # eza (ls alternative)
 alias ls="eza --icons --group-directories-first"
 alias lt="eza --icons --group-directories-first --tree --level=2"

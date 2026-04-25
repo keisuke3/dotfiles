@@ -1,7 +1,6 @@
 {
   "permissions": {
-    "allow": [
-    ],
+    "allow": [],
     "deny": [
       "Bash(sudo:*)",
       "Bash(rm:*)",
@@ -10,6 +9,18 @@
       "Bash(git commit:*)",
       "Bash(git reset:*)",
       "Bash(git rebase:*)",
+      "Bash(cat .env*:*)",
+      "Bash(cat */.env*:*)",
+      "Bash(head .env*:*)",
+      "Bash(head */.env*:*)",
+      "Bash(tail .env*:*)",
+      "Bash(tail */.env*:*)",
+      "Bash(less .env*:*)",
+      "Bash(more .env*:*)",
+      "Bash(grep * .env*:*)",
+      "Bash(grep *.env*:*)",
+      "Bash(sed * .env*:*)",
+      "Bash(awk * .env*:*)",
       "Read(.env.*)",
       "Read(id_rsa)",
       "Read(id_ed25519)",
