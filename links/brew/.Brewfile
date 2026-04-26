@@ -1,7 +1,4 @@
 # Taps
-tap "homebrew/cask"
-tap "homebrew/core"
-tap "homebrew/bundle"
 tap "oven-sh/bun"
 tap "wez/wezterm"
 
