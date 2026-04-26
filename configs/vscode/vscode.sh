@@ -1,11 +1,11 @@
 #!/bin/bash
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
-VSCODE_SETTING_PATH="${HOME}/Library/Application\ Support/Code - Insiders/User/settings.json"
-VSCODE_KEYBINDINGS_PATH="${HOME}/Library/Application\ Support/Code - Insiders/User/keybindings.json"
+VSCODE_SETTING_PATH="${HOME}/Library/Application Support/Code - Insiders/User/settings.json"
+VSCODE_KEYBINDINGS_PATH="${HOME}/Library/Application Support/Code - Insiders/User/keybindings.json"
 
 # Link settings.json to vscode
-if not [ -L "${VSCODE_SETTING_PATH}" ]; then
+if ! [ -L "${VSCODE_SETTING_PATH}" ]; then
   echo "Linking settings.json to Code - Insiders..."
   ln -fsvn "${SCRIPT_DIR}/settings.json" "${VSCODE_SETTING_PATH}"
 else
@@ -13,7 +13,7 @@ else
 fi
 
 # Link keybindings.json to vscode
-if not [ -L "${VSCODE_KEYBINDINGS_PATH}" ]; then
+if ! [ -L "${VSCODE_KEYBINDINGS_PATH}" ]; then
   echo "Linking keybindings.json to Code - Insiders..."
   ln -fsvn "${SCRIPT_DIR}/keybindings.json" "${VSCODE_KEYBINDINGS_PATH}"
 else
