@@ -5,7 +5,7 @@
 help: ## ヘルプを表示
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-20s\033[0m %s\n", $$1, $$2}'
 
-all: link defaults brew build-apps ## 全てのセットアップ（リンク、システム設定、Brew、アプリビルド）を実行
+all: brew link defaults build-apps ## 全てのセットアップ（リンク、システム設定、Brew、アプリビルド）を実行
 
 link: ## links/ 配下のシンボリックリンクを作成
 	@echo "\033[0;34mRun links.sh\033[0m"
